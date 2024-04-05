@@ -13,6 +13,10 @@
 </head>
 
 <body>
+
+
+      
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
@@ -22,50 +26,40 @@
 
             <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
                 <a class="navbar-brand col-lg-3 me-0" href="#">Socio-Hub</a>
-                <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-
+      
+                <ul class="list-group list-group-horizontal d-lg-flex col-lg-9 justify-content-lg-end bg-none">
+                    
+                    <li class="list-group-item p-0 m-0 bg-none border-0 dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="https://github.com/rmhari.png" width="40" class="rounded-circle">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <!-- <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-            </div> -->
-                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                    <div class="d-flex bd-highlight">
-                        <a class="navbar-brand pe-0" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div id="userMenu" class="flex-shrink-1 bd-highlight ">
-                                <img src="https://lh3.googleusercontent.com/a/ACg8ocJdP-Vyl0kDLnszCTzAHGJ894KcEhhWIXHpUyms754UBVMM7kYh=s96-c"
-                                    class="img-circle img-thumbnail avatar"
-                                    style="vertical-align:middle;border-radius:50%;width:3rem" alt="avatar">
-                            </div>
-                        </a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </nav>
 
-    <div id="posts" class="container mt-5 mb-5">
+    <div id="posts" class="container mt-2">
+
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-6">
-                <div class="card">
+                <div class="card bg-white">
                     <div class="d-flex justify-content-between p-2 px-3">
-                        <div class="d-flex flex-row align-items-center"> <img src="https://i.imgur.com/UXdKE3o.jpg"
-                                width="50" class="rounded-circle">
-                            <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Jeanette Sun</span>
-                                <small class="text-primary">Collegues</small>
+                        <div class="d-flex flex-row align-items-center"> 
+                            <img src="https://i.imgur.com/UXdKE3o.jpg"
+                                width="40" class="rounded-circle">
+                            <div class="d-flex flex-column mx-2"> <span class="font-weight-bold">Jeanette Sun</span>
+                                <small class="text-primary">Romaguera-Crona</small>
                             </div>
                         </div>
                         <div class="d-flex flex-row mt-1 ellipsis"> <small class="mr-2">20 mins</small> <i
                                 class="fa fa-ellipsis-h"></i> </div>
-                    </div> <img src="https://i.imgur.com/xhzhaGA.jpeg" class="img-fluid">
+                    </div> <img src="https://picsum.photos/200" class="img-fluid">
                     <div class="p-2">
                         <h5>Post Title</h5>
                         <p>Post Body</p>
@@ -80,14 +74,22 @@
                         <div class="comments">
                             <div class="d-flex flex-row mb-2"> <img src="https://i.imgur.com/9AZ2QX1.jpg" width="40"
                                     class="rounded-image">
-                                <div class="d-flex flex-column ml-2"> <span class="name">Daniel Frozer</span> <small
+                                <div class="d-flex flex-column mx-2"> <span class="name">Daniel Frozer</span> <small
                                         class="comment-text">Comment Body</small>
                                     <div class="d-flex flex-row align-items-center status"> <small>Like</small>
-                                        <small>Reply</small> <small>Translate</small> <small>18 mins</small>
+                                        <small>Reply</small> <small>18 mins</small>
                                     </div>
                                 </div>
                             </div>
-
+                            <div class="d-flex flex-row mb-2"> <img src="https://i.imgur.com/9AZ2QX1.jpg" width="40"
+                                class="rounded-image">
+                            <div class="d-flex flex-column mx-2"> <span class="name">Daniel Frozer</span> <small
+                                    class="comment-text">Comment Body</small>
+                                <div class="d-flex flex-row align-items-center status"> <small>Like</small>
+                                    <small>Reply</small> <small>18 mins</small>
+                                </div>
+                            </div>
+                        </div>
                             <div class="comment-input"> <input type="text" class="form-control">
                                 <div class="fonts"> <i class="fa fa-camera"></i> </div>
                             </div>
@@ -96,8 +98,11 @@
                 </div>
             </div>
         </div>
+    
     </div>
-    <script src="./js/main.js"></script>
+
+
+    <script type="module" src="./js/main.js"></script>
 
 </body>
 

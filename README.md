@@ -5,6 +5,7 @@ Social media homepage featuring posts along with their corresponding comments.
  - Node JS
  - Parcel Bundler
  - Bootstrap 5
+ - Font Awesome 6
  - SCSS
  - Github Actions for CI
  - Github Pages for CD
