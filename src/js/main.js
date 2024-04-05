@@ -12,7 +12,12 @@ const renderPost = (post,users) => {
     const commentsCount = postContainer.querySelector("div.d-flex.flex-row.muted-color");
     const commentsContainer = postContainer.querySelector( ".comments");
     const userName = postContainer.querySelector(".font-weight-bold");
+    const userAvatar = postContainer.querySelector(".rounded-circle");
     const companyName = postContainer.querySelector(".text-primary");
+
+    
+
+
     postContainer.querySelector(".img-fluid").src = "https://picsum.photos/200?random=" + post.id;
 
     postsContainer.appendChild(postContainer);  
@@ -21,7 +26,7 @@ const renderPost = (post,users) => {
 
     userName.innerHTML = user.name;
     companyName.innerHTML = user.company.name;
-
+    userAvatar.src = userAvatar.src + user.name;
     
 
     console.log(user);
@@ -37,6 +42,8 @@ const renderPost = (post,users) => {
            
 
            const user = users.find((user) => user.email === comment.email);
+
+           
 
            if(user) {
             commentContainer.querySelector(".name").innerHTML = user.name;
