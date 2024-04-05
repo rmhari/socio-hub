@@ -13,6 +13,8 @@ const renderPost = (post,users) => {
     const commentsContainer = postContainer.querySelector( ".comments");
     const userName = postContainer.querySelector(".font-weight-bold");
     const companyName = postContainer.querySelector(".text-primary");
+    postContainer.querySelector(".img-fluid").src = "https://picsum.photos/200?random=" + post.id;
+
     postsContainer.appendChild(postContainer);  
 
     const user = users.find((user) => user.id === post.userId);
