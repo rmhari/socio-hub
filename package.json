@@ -19,6 +19,7 @@
   "homepage": "https://github.com/rmhari/socio-hub#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
+    "bootstrap": "^5.3.3",
     "parcel": "^2.12.0"
   },
   "source": "src/index.html",
