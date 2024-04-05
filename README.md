@@ -18,6 +18,7 @@ npm run build
 
 ## References
 - https://www.digitalocean.com/community/tutorials/how-to-bundle-a-web-app-with-parcel-js
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
 
 
 
