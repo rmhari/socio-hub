@@ -30,14 +30,14 @@ jobs:
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v4
-    - name: Install dependencies
-      run: npm install
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm run build
+    - run: |
+        npm i
+        npm run build
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
