@@ -26,6 +26,6 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --public-url ./socio-hub"
+    "build": "parcel build --public-url /socio-hub"
   }
 }
