@@ -5,10 +5,13 @@ Social media homepage featuring posts along with their corresponding comments.
  - Node JS
  - Parcel Bundler
  - Bootstrap 5
+ - Github Actions for CI
+ - Github Pages for CD
 
 ## Setup
 ~~~ 
 nvm i
+npm run build
 ~~~
 
 ## References
