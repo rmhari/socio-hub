@@ -39,7 +39,7 @@ const renderPost = (post,users) => {
         comments.forEach(comment => {
            const commentContainer = commentTemplate.content.cloneNode(true);
            commentContainer.querySelector(".comment-text").innerHTML = comment.body;
-           
+           commentContainer.querySelector(".rounded-image").src = "https://picsum.photos/200?random=" + comment.id;
 
            const user = users.find((user) => user.email === comment.email);
 
