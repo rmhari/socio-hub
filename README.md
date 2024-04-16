@@ -14,7 +14,7 @@ Social media homepage featuring posts along with their corresponding comments.
 
 ### NVM
 
-We need [Node Version Manager(nvm)]([url](https://github.com/nvm-sh/nvm)) to start with nodejs instalation. It helps us manage and switch between different Node versions with ease, to work on different projects that require different Node.js versions.
+We need [Node Version Manager(nvm)](https://github.com/nvm-sh/nvm) to start with nodejs instalation. It helps us manage and switch between different Node versions with ease, to work on different projects that require different Node.js versions.
 
 To check the nvm instalation
 ~~~ 
@@ -60,7 +60,26 @@ Once the command runs succefully we will see `package.json` file
 
 ### Parcel Bunder
 
-We need bundler (like maven for java) to build and run our project. We choose parcel js. Instructions are available [here]([url](https://parceljs.org/getting-started/webapp/))
+We need bundler (like maven for java) to build and run our project. We choose parcel js. Instructions are available [here](https://parceljs.org/getting-started/webapp/)
+
+### Bootstrap
+
+We need include bootstrap dependecy to the project
+
+~~~ 
+npm install --save-dev bootstrap
+~~~
+
+To add bootstrap scss we need to create a file `src/scss/style.scss`and include 
+
+~~~ 
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+~~~
+
+Also, for scripting support we need to include below at `src/js/script.js`
+~~~ 
+import { Dropdown } from "bootstrap";
+~~~
 
 ## References
 - https://www.digitalocean.com/community/tutorials/how-to-bundle-a-web-app-with-parcel-js
